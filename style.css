@@ -27,7 +27,14 @@ body {
   font-size: 14px;
   margin-left: 10px;
   padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
 }
 
 .seat {
@@ -66,6 +73,45 @@ body {
   transform: scale(1);
 }
 
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.screen {
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
 .row {
   display: flex;
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: #6feaf6;
 }
