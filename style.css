@@ -65,7 +65,7 @@ body {
 .seat:not(.occupied):hover {
   cursor: pointer;
   transform: scale(1.2);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .showcase .seat:not(.occupied):hover {
